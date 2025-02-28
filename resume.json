@@ -1,0 +1,177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Matthew Macdonald",
+    "label": "Platform Engineer",
+    "image": "",
+    "email": "matt@conceptsys.io",
+    "phone": "+61421060451",
+    "summary": "Passionate Platform Engineer with 8 years of experience autonomously delivering solutions and maintaining reliable systems. With a solid technical background and an aptitude for problem solving and adaptability, I am driven towards roles that challenge my understanding and provide a constant source of growth.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Melbourne",
+      "countryCode": "AU",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "magicmatteo",
+        "url": "https://linkedin.com/in/magicmatteo"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "McMillan Shakespeare Group",
+      "location": "Melbourne",
+      "position": "Senior Platform Engineer",
+      "startDate": "2024-04-01",
+      "highlights": [
+        "Built an internal .NET Blazor web app which allows platform team members and devs to quickly and efficiently manage the secrets in their environments",
+        "Tasked with bringing a collection of Azure infrastructure supporting the sales pipeline environments up to platform standards. This requires a deep dive into the existing infrastructure and config (undocumented) to gain a strong understanding of the landscape before recreating it from the ground up using Terraform, while documenting everything along the way and creating playbooks for prod deployment",
+        "Work with dev teams to gather infrastructure requirements and advise them on correct patterns and best practices",
+        "Contribute improvements to the internal Terraform module library"
+      ]
+    },
+    {
+      "name": "Kolmeo",
+      "position": "DevOps Engineer",
+      "location": "Melbourne",
+      "startDate": "2022-10-01",
+      "endDate": "2024-04-01",
+      "highlights": [
+        "Reduced total monthly Azure spend by 40% by consolidating app services into modern plans across all environments and other miscellaneous changes",
+        "SME for Kolmeo’s self-serve environment platform, built on Kubernetes using Terraform, Helm & scripts. Ongoing maintenance, support, and improvement of the platform",
+        "Instrumented OpenTelemetry within our application – providing dev teams with the ability create vendor agnostic custom traces and metrics",
+        "Modularised our platform layer, enabling multiple versions of it with different use cases and security domains. This allowed rapid creation of dedicated platforms for things like trials/demos and migration dry runs which improved our sales and onboarding pipeline",
+        "Created and maintained an internal web app (Node / Vue.js) for the execution of approved SQL scripts against production DB’s – reducing load on data & operations teams",
+        "Using C#/.NET, added MFA config and auditing functionality into our main application. This is an example of real production feature development, including unit tests",
+        "Performance tuning and optimisation of our platform infrastructure, comprising of memory optimised nodes, spot pools, SQL resource pooling, workload scheduling and node autoscaling. This reduced both env creation time and cost by 87% each, coincidently"
+      ]
+    },
+    {
+      "name": "Business Fitness",
+      "position": "DevOps Engineer",
+      "location": "Brisbane",
+      "startDate": "2021-11-01",
+      "endDate": "2022-10-01",
+      "highlights": [
+        "Redesigned the infrastructure of an Azure hosted web application, taking it from a point-and-click delivery style to a GitOps structure defined in Terraform, allowing near instant DR",
+        "Overhauled CI/CD pipelines, increasing efficiency and reliability through dependency caching, agent runtime version locking and job concurrency, which increased developer confidence, enabling a higher release cadence",
+        "Implemented dependency vulnerability scanning on pipelines, illuminating multiple critical CVE’s, substantially reducing risk and securing the SDLC moving forward through quality gates",
+        "Identified and implemented cloud resource cost reductions, reducing the bill on cost-majority resources by 25%",
+        "Member of the Information Security Working Group, responsible for the implementation and ongoing maintenance of Business Fitness’ ISMS, fulfilling requirements of ISO27001",
+        "Instrumental in the diagnosis of multiple production issues, in one case implementing APM tools on the fly to diagnose a buggy message queue publishing method. In another case utilizing Grafana and dotnet debugging tools to discover a thread starvation issue on a Kubernetes deployment that was causing heavy disruption"
+      ]
+    },
+    {
+      "name": "Dean & Co Pty Ltd",
+      "position": "Systems Engineer",
+      "location": "Melbourne",
+      "startDate": "2018-01-01",
+      "endDate": "2021-11-01",
+      "highlights": [
+        "Research and development of solutions to new and existing problems across Dean & Co’s client base, consulting through the process",
+        "Successfully led and delivered multiple projects across multiple sites",
+        "Implementation and administration of the cloud tenants across Dean & Co’s client base",
+        "Architected a solution in Azure with the requirement of a Microsoft SQL server being accessed by IoT devices throughout their sites, inclusive of security best practices",
+        "Implemented an automated device imaging solution, decreasing manual labour by 50% and increasing endpoint reliability by 25%"
+      ]
+    }
+  ],
+  "volunteer": [
+  ],
+  "education": [
+  ],
+  "awards": [
+    {
+      "title": "Be brave, be bold, own it.",
+      "date": "2023-12-17",
+      "awarder": "Kolmeo",
+      "summary": "Receiver of the annual award \"Be brave, be bold, own it\" for driving improvement in CI/CD processes."
+    }
+  ],
+  "publications": [
+  ],
+  "skills": [
+    {
+      "name": "Systems & Cloud Engineering",
+      "level": "Senior",
+      "keywords": [
+        "CI/CD",
+        "Azure",
+        "Networking",
+        "Infrastructure as Code",
+        "Observability",
+        "Security",
+        "Automation",
+        "Scripting",
+        "Container Orchestration",
+        "IAM"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "Intermediate",
+      "keywords": [
+        "C#",
+        "Python",
+        "Go",
+        "PowerShell"
+      ]
+    },
+    {
+      "name": "Tooling & Platforms",
+      "level": "Senior",
+      "keywords": [
+        "Linux",
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "Terraform",
+        "Git",
+        "Azure Devops",
+        "Dynatrace",
+        "NewRelic",
+        "OpenTelemetry",
+        "Sonarqube"
+      ]
+    }
+  ],
+  "languages": [
+  ],
+  "interests": [
+    {
+      "name": "Golf",
+      "keywords": [
+        "Chipping",
+        "Hitting greens"
+      ]
+    },
+    {
+      "name": "Fishing",
+      "keywords": [
+        "Lure fishing for Bream"
+      ]
+    },
+    {
+      "name": "Home Renovation",
+      "keywords": [
+        "Carpentry",
+        "Cabinet Making",
+        "Landscaping"
+      ]
+    }
+  ],
+  "references": [
+  ],
+  "projects": [
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/sample.resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
