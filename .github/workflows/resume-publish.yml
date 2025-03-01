@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf
-          path: artifact/resume.pdf
+          path: artifact/Matthew-Macdonald-Resume-v1.0.${{ github.run_number }}.pdf
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
