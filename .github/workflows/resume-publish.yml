@@ -32,14 +32,25 @@ jobs:
           cp photo.jpeg publish/photo.jpeg
           resume export publish/index.html --theme=stackoverflow
 
+      - name: Install Chrome dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libnss3 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libxcomposite1 \
+            libxrandr2 \
+            libxdamage1 \
+            libgbm1 \
+            libpango-1.0-0 \
+            libasound2
+
       - name: Generate pdf resume
         run: |
           mkdir artifact
           resume export artifact/resume.pdf --theme=stackoverflow
-        env:  
-          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
-          PUPPETEER_EXECUTABLE_PATH: "/usr/bin/chromium-browser"
-        continue-on-error: true
 
       - name: Upload pdf resume as artifact
         uses: actions/upload-artifact@v4
