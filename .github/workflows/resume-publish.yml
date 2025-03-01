@@ -32,16 +32,10 @@ jobs:
           cp photo.jpeg publish/photo.jpeg
           resume export publish/index.html --theme=stackoverflow
 
-      - name: Install Chrome dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libappindicator1 fonts-liberation
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome*.deb
-
       - name: Generate pdf resume
         run: |
           mkdir artifact
+          export RESUME_PUPPETEER_NO_SANDBOX=1
           resume export artifact/resume.pdf --theme=stackoverflow
 
       - name: Upload pdf resume as artifact
