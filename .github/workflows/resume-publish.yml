@@ -1,0 +1,35 @@
+name: Build and Deploy Resume
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install resume-cli
+        run: npm install -g resume-cli
+
+      - name: Install StackOverflow theme
+        run: npm install -g jsonresume-theme-stackoverflow
+
+      - name: Generate Resume HTML
+        run: |
+          resume export index.html --theme=elegant
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: main
+          folder: /
