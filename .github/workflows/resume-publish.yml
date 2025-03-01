@@ -26,14 +26,49 @@ jobs:
       - name: Install themes
         run: npm install
 
-      - name: Generate Resume HTML
+      - name: Create site
         run: |
           mkdir publish
           cp photo.jpeg publish/photo.jpeg
           resume export publish/index.html --theme=stackoverflow
+
+      - name: Generate pdf resume
+        run: |
+          mkdir artifact
+          resume export artifact/resume.pdf --theme=stackoverflow
+
+      - name: Upload pdf resume as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: artifact/resume.pdf
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: publish
+
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download Resume Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: resume-pdf
+          path: release
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/resume.pdf
+          tag_name: v1.0.${{ github.run_number }}
+          release_name: "Resume v1.0.${{ github.run_number }}"
+          body: "Auto-generated resume from commit ${{ github.sha }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
