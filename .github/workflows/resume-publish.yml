@@ -18,7 +18,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install resume-cli and themes
+      - name: Install resume-cli
+        run: npm install -g resume-cli
+
+      - name: Install themes
         run: npm install
 
       - name: Generate Resume HTML
@@ -29,4 +32,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main
-          folder: /
+          folder: .
