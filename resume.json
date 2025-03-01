@@ -3,7 +3,7 @@
   "basics": {
     "name": "Matthew Macdonald",
     "label": "Platform Engineer",
-    "image": "photo.jpeg",
+    "image": "https://raw.githubusercontent.com/magicmatteo/resume/refs/heads/main/photo.jpeg",
     "email": "matt@conceptsys.io",
     "phone": "+61421060451",
     "summary": "Passionate Platform Engineer with 8 years of experience autonomously delivering solutions and maintaining reliable systems. With a solid technical background and an aptitude for problem solving and adaptability, I am driven towards roles that challenge my understanding and provide a constant source of growth.",
