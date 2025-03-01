@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Matthew Macdonald",
+    "name": "Matthew Macdonald - TEST",
     "label": "Platform Engineer",
     "image": "photo.jpeg",
     "email": "matt@conceptsys.io",
