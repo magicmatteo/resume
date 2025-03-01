@@ -18,11 +18,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install resume-cli
-        run: npm install -g resume-cli
-
-      - name: Install StackOverflow theme
-        run: npm install -g jsonresume-theme-stackoverflow
+      - name: Install resume-cli and themes
+        run: npm install
 
       - name: Generate Resume HTML
         run: |

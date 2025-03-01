@@ -2,5 +2,8 @@
   "dependencies": {
     "jsonresume-theme-even": "^0.23.0",
     "jsonresume-theme-stackoverflow": "^2.1.0"
+  },
+  "devDependencies": {
+    "resume-cli": "^3.0.8"
   }
 }
