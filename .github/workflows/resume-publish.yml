@@ -36,7 +36,7 @@ jobs:
         run: |
           mkdir artifact
           export RESUME_PUPPETEER_NO_SANDBOX=1
-          resume export artifact/resume.pdf --theme=stackoverflow
+          resume export artifact/Matthew-Macdonald-Resume-v1.0.${{ github.run_number }}.pdf --theme=stackoverflow
 
       - name: Upload pdf resume as artifact
         uses: actions/upload-artifact@v4
@@ -67,7 +67,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: release/resume.pdf
+          files: release/Matthew-Macdonald-Resume-v1.0.${{ github.run_number }}.pdf
           tag_name: v1.0.${{ github.run_number }}
           release_name: "Resume v1.0.${{ github.run_number }}"
           body: "Auto-generated resume from commit ${{ github.sha }}"
