@@ -26,7 +26,7 @@ jobs:
 
       - name: Generate Resume HTML
         run: |
-          resume export index.html --theme=elegant
+          resume export index.html --theme=stackoverflow
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
