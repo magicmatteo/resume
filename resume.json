@@ -98,7 +98,6 @@
   "skills": [
     {
       "name": "Systems & Cloud Engineering",
-      "level": "Senior",
       "keywords": [
         "CI/CD",
         "Azure",
@@ -114,7 +113,6 @@
     },
     {
       "name": "Software Development",
-      "level": "Intermediate",
       "keywords": [
         "C#",
         "Python",
@@ -124,7 +122,6 @@
     },
     {
       "name": "Tooling & Platforms",
-      "level": "Senior",
       "keywords": [
         "Linux",
         "Docker",
@@ -147,6 +144,7 @@
       "name": "Golf",
       "keywords": [
         "Chipping",
+        "Pureing irons",
         "Hitting greens"
       ]
     },
@@ -161,16 +159,12 @@
       "keywords": [
         "Carpentry",
         "Cabinet Making",
-        "Landscaping"
+        "General improvement"
       ]
     }
   ],
   "references": [
   ],
   "projects": [
-  ],
-  "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/sample.resume.json",
-    "version": "v1.0.0"
-  }
+  ]
 }
