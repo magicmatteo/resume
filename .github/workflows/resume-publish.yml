@@ -35,7 +35,11 @@ jobs:
       - name: Generate pdf resume
         run: |
           mkdir artifact
-          PUPPETEER_ARGS="--no-sandbox --disable-setuid-sandbox" resume export artifact/resume.pdf --theme=stackoverflow
+          resume export artifact/resume.pdf --theme=stackoverflow
+        env:  
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+          PUPPETEER_EXECUTABLE_PATH: "/usr/bin/chromium-browser"
+        continue-on-error: true
 
       - name: Upload pdf resume as artifact
         uses: actions/upload-artifact@v4
