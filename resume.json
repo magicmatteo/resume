@@ -87,10 +87,8 @@
       ]
     }
   ],
-  "volunteer": [
-  ],
-  "education": [
-  ],
+  "volunteer": [],
+  "education": [],
   "awards": [
     {
       "title": "Be brave, be bold, own it.",
@@ -99,8 +97,7 @@
       "summary": "Receiver of the annual award \"Be brave, be bold, own it\" for driving improvement in CI/CD processes."
     }
   ],
-  "publications": [
-  ],
+  "publications": [],
   "skills": [
     {
       "name": "Systems & Cloud Engineering",
@@ -108,7 +105,7 @@
         "CI/CD",
         "Azure",
         "Networking",
-        "Infrastructure as Code",
+        "Infrastructure as Code (IaC)",
         "Observability",
         "Security",
         "Automation",
@@ -136,6 +133,7 @@
         "Terraform",
         "Git",
         "Azure Devops",
+        "Github Actions",
         "Dynatrace",
         "NewRelic",
         "OpenTelemetry",
@@ -143,8 +141,7 @@
       ]
     }
   ],
-  "languages": [
-  ],
+  "languages": [],
   "interests": [
     {
       "name": "Golf",
@@ -169,8 +166,6 @@
       ]
     }
   ],
-  "references": [
-  ],
-  "projects": [
-  ]
+  "references": [],
+  "projects": []
 }
