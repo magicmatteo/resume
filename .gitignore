@@ -131,3 +131,5 @@ dist
 
 # html serve folder
 public
+
+.DS_Store

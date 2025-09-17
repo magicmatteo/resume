@@ -30,10 +30,26 @@
   },
   "work": [
     {
+      "company": "Bunnings",
+      "location": "Melbourne",
+      "position": "Senior DevOps Engineer (Contract)",
+      "startDate": "2025-04-01",
+      "highlights": [
+        "Led the migration of a critical application from legacy infrastructure to Azure + Kubernetes, improving scalability, resilience, and long-term maintainability",
+        "Re-architected application code (.NET) from an Azure Function into three Kubernetes-native workloads (API, Worker, CLI), enabling horizontal scaling and cleaner separation of concerns",
+        "Migrated CI/CD pipelines from Azure DevOps to GitHub Actions and Octopus Deploy, aligning with newly established organizational engineering standards",
+        "Automated the data migration, minimizing downtime and reducing risk during cutover",
+        "Authored and executed the cutover strategy, ensuring seamless transition of the application with minimal disruption",
+        "Implemented IaC to automate database provisioning within Azure landing zones, enforcing least-privilege access controls to databases hosted on a shared SQL Server and reducing manual effort across environments",
+        "Uplifted and standardized shared Terraform modules, accelerating adoption of cloud best practices across teams"
+      ]
+    },
+    {
       "company": "McMillan Shakespeare Group",
       "location": "Melbourne",
       "position": "Senior Platform Engineer (Contract)",
       "startDate": "2024-04-01",
+      "endDate": "2025-04-01",
       "highlights": [
         "Built an internal .NET Blazor web app which allows platform team members and devs to quickly and efficiently manage the secrets in their environments",
         "Tasked with bringing a collection of Azure infrastructure supporting the sales pipeline environments up to platform standards. This requires a deep dive into the existing infrastructure and config (undocumented) to gain a strong understanding of the landscape before recreating it from the ground up using Terraform, while documenting everything along the way and creating playbooks for prod deployment",
@@ -111,7 +127,8 @@
         "Automation",
         "Scripting",
         "Container Orchestration",
-        "IAM"
+        "IAM",
+        "GitOps"
       ]
     },
     {
@@ -137,7 +154,9 @@
         "Dynatrace",
         "NewRelic",
         "OpenTelemetry",
-        "Sonarqube"
+        "Sonarqube",
+        "Scalr",
+        "Octopus Deploy"
       ]
     }
   ],
